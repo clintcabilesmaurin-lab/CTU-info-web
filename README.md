@@ -1,3 +1,5 @@
-Clint Aldwin C. Maurin
+CLINT ALDWIN C. MAURIN
+
 BSIT 1-1
+
 Multimedia
