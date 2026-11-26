@@ -1,8 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f0;
-    color: #26352f;
+    background-color: beige;
+    color: darkslategray;
     line-height: 1.6;
 }
 
@@ -21,7 +25,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #b33b27;
+    color: firebrick;
     text-decoration: none;
 }
 
@@ -32,8 +36,8 @@ a:hover {
 
 .site-header {
     position: static;
-    background-color: #174334;
-    border-bottom: 5px solid #d9a832;
+    background-color: darkgreen;
+    border-bottom: 5px solid goldenrod;
 }
 
 .header-content {
@@ -41,7 +45,7 @@ a:hover {
     align-items: center;
     gap: 22px;
     padding: 15px 20px;
-    border-left: 6px solid #c94b31;
+    border-left: 6px solid tomato;
 }
 
 .logo {
@@ -49,7 +53,7 @@ a:hover {
     height: 112px;
     padding: 5px;
     background-color: white;
-    border: 3px solid #d9a832;
+    border: 3px solid goldenrod;
     border-radius: 50%;
 }
 
@@ -61,12 +65,12 @@ a:hover {
 
 .campus-name p {
     margin: 7px 0 0;
-    color: #f2c14e;
+    color: khaki;
     font-size: 15px;
 }
 
 .navigation {
-    background-color: #102d25;
+    background-color: darkslategray;
     padding: 12px 5%;
     text-align: center;
 }
@@ -79,13 +83,13 @@ a:hover {
 }
 
 .navigation a:hover {
-    color: #f2c14e;
+    color: khaki;
 }
 
 
 .welcome-section {
     position: relative;
-    background-color: #174334;
+    background-color: darkgreen;
     color: white;
     padding: 70px 0;
 }
@@ -101,14 +105,14 @@ a:hover {
 
 .small-title,
 .section-label {
-    color: #c94b31;
+    color: tomato;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
 .welcome-section .small-title {
-    color: #f2c14e;
+    color: khaki;
 }
 
 .welcome-text h2 {
@@ -122,8 +126,8 @@ a:hover {
 
 .button {
     display: inline-block;
-    background-color: #f2c14e;
-    color: #26352f;
+    background-color: khaki;
+    color: darkslategray;
     padding: 10px 18px;
     margin-top: 12px;
     border-radius: 5px;
@@ -147,11 +151,11 @@ a:hover {
 }
 
 .gray-section {
-    background-color: #eeeeea;
+    background-color: whitesmoke;
 }
 
 .content-section h2 {
-    color: #174334;
+    color: darkgreen;
     font-size: 30px;
     margin-top: 5px;
 }
@@ -163,8 +167,8 @@ a:hover {
 
 .about-box,
 .campus-details {
-    background-color: #f5f5f0;
-    border-left: 5px solid #c94b31;
+    background-color: beige;
+    border-left: 5px solid tomato;
     padding: 20px;
     margin-top: 20px;
 }
@@ -172,7 +176,7 @@ a:hover {
 .about-box h3,
 .campus-details h3 {
     margin-top: 0;
-    color: #174334;
+    color: darkgreen;
 }
 
 
@@ -188,14 +192,14 @@ a:hover {
     position: static;
     width: 48%;
     background-color: white;
-    border: 1px solid #dddddd;
-    border-top: 4px solid #174334;
+    border: 1px solid lightgray;
+    border-top: 4px solid darkgreen;
     padding: 20px;
     margin-bottom: 5px;
 }
 
 .info-card h3 {
-    color: #174334;
+    color: darkgreen;
     margin-top: 5px;
 }
 
@@ -204,13 +208,13 @@ a:hover {
 }
 
 .card-category {
-    color: #b33b27;
+    color: firebrick;
     font-size: 12px;
     font-weight: bold;
 }
 
 .small-note {
-    color: #666666;
+    color: dimgray;
     font-size: 13px;
     margin-top: 20px;
 }
@@ -220,17 +224,17 @@ a:hover {
 }
 
 .event-card {
-    border-top-color: #d9a832;
+    border-top-color: goldenrod;
 }
 
 
 .official-links {
-    background-color: #e2e8e2;
+    background-color: honeydew;
     padding: 30px 0;
 }
 
 .official-links h2 {
-    color: #174334;
+    color: darkgreen;
 }
 
 .official-links a {
@@ -240,7 +244,7 @@ a:hover {
 
 
 .site-footer {
-    background-color: #102d25;
+    background-color: darkslategray;
     color: white;
     text-align: center;
     padding: 30px 0;
@@ -251,7 +255,7 @@ a:hover {
 }
 
 .site-footer a {
-    color: #f2c14e;
+    color: khaki;
 }
 
 
@@ -259,7 +263,7 @@ a:hover {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background-color: #c94b31;
+    background-color: tomato;
     color: white;
     padding: 10px 14px;
     border-radius: 5px;
@@ -271,7 +275,7 @@ a:hover {
         flex-direction: column;
         text-align: center;
         border-left: none;
-        border-bottom: 4px solid #c94b31;
+        border-bottom: 4px solid tomato;
     }
 
     .campus-name h1 {
@@ -300,5 +304,12 @@ a:hover {
 
     .content-section {
         padding: 35px 0;
+    }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
