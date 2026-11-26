@@ -40,7 +40,9 @@ a:hover {
 
 
 .site-header {
-    position: static;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: darkgreen;
     border-bottom: 5px solid goldenrod;
 }
@@ -145,7 +147,6 @@ a:hover {
 }
 
 .welcome-logo {
-    
     position: absolute;
     right: 25px;
     top: 10px;
@@ -183,6 +184,7 @@ a:hover {
     margin-top: 20px;
 }
 
+
 .about-box h3,
 .campus-details h3 {
     margin-top: 0;
@@ -198,7 +200,6 @@ a:hover {
 }
 
 .info-card {
-    
     position: static;
     flex: 1 1 calc(50% - 20px);
     min-width: 0;
