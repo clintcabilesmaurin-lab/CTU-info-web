@@ -8,10 +8,15 @@ body {
     background-color: beige;
     color: darkslategray;
     line-height: 1.6;
+    overflow-wrap: break-word;
 }
 
 * {
     box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
 }
 
 .container {
@@ -70,15 +75,20 @@ a:hover {
 }
 
 .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px 18px;
     background-color: darkslategray;
     padding: 12px 5%;
-    text-align: center;
 }
 
 .navigation a {
     display: inline-block;
     color: white;
-    margin: 5px 14px;
+    margin: 4px 0;
+    padding: 6px 2px;
     font-weight: bold;
 }
 
@@ -190,7 +200,8 @@ a:hover {
 .info-card {
     
     position: static;
-    width: 48%;
+    flex: 1 1 calc(50% - 20px);
+    min-width: 0;
     background-color: white;
     border: 1px solid lightgray;
     border-top: 4px solid darkgreen;
@@ -271,39 +282,81 @@ a:hover {
 
 
 @media screen and (max-width: 700px) {
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-        border-left: none;
-        border-bottom: 4px solid tomato;
+    .container {
+        width: 92%;
     }
 
-    .campus-name h1 {
-        font-size: 21px;
+    .navigation {
+        gap: 6px 14px;
+        padding: 12px 4%;
     }
 
-    .navigation a {
-        margin: 5px 8px;
+    .welcome-section {
+        padding: 48px 0;
     }
 
     .welcome-text h2 {
-        font-size: 32px;
+        font-size: clamp(28px, 7vw, 36px);
     }
 
     .welcome-logo {
         position: static;
         display: block;
-        width: 135px;
-        height: 135px;
+        width: min(135px, 45vw);
+        height: auto;
         margin: 25px auto 0;
     }
 
     .info-card {
-        width: 100%;
+        flex-basis: 100%;
     }
 
     .content-section {
-        padding: 35px 0;
+        padding: 38px 0;
+    }
+
+    .content-section h2 {
+        font-size: clamp(24px, 6vw, 30px);
+    }
+
+    .about-box,
+    .campus-details,
+    .info-card {
+        padding: 16px;
+    }
+
+    .back-to-top {
+        right: 12px;
+        bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navigation {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .navigation a {
+        padding: 7px 12px;
+    }
+
+    .welcome-section {
+        padding: 36px 0;
+    }
+
+    .small-title,
+    .section-label {
+        font-size: 11px;
+    }
+
+    .official-links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .back-to-top {
+        padding: 8px 10px;
     }
 }
 
